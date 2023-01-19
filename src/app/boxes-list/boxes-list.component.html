@@ -1,0 +1,12 @@
+<ul class="list-group justify-content-center">
+  <li class="list-group-item" *ngFor="let box of boxes$ | async">
+    <div class="container-md">
+      <div class="list-group-item">{{box.name}}</div>
+      <div class="list-group-item">{{box.cost}}</div>
+      <div class="list-group-item img-wrapper">
+        <img class="col-md-4" src={{box.iconUrl}} alt="no image"/>
+      </div>
+      <a class="btn btn-primary button-link" [routerLink]="['/box-open', box.id]">Open box</a>
+    </div>
+  </li>
+</ul>

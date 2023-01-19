@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div *ngIf="!currentUser" class="container-md">
+    <a class="navbar-brand" href="https://api-staging.csgoroll.com/auth/steam?redirectUri=http://localhost:4200">Login with steam account</a>
+  </div>
+  <div *ngIf="currentUser !== undefined" class="container-md justify-content-end">
+    <div class="user-name">{{currentUser.name}}</div>
+    <div class="wallet-amount">{{walletAmount}}</div>
+  </div>
+</nav>
+
+<div class="navbar flex-column">
+  <div class="nav-item">
+    <a class="navbar-brand" routerLink="/boxes">Boxes list</a>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.button-link {
+  margin-left: 50%;
+  translate: -50%;
+}
